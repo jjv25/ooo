@@ -1,11 +1,10 @@
 from roman import *
 
-arabic = [str(x) for x in input('Введите римское чилсло что преобразовать в арабское: ').split()]
-for i in arabic:
-    print(i, '->' ,roman_to_int(i))
+ar = ['IV', 'LVIII', 'MCMXCIV', 'XCIX', 'LXXX', 'LXIX']
+print(ar) #выводим результат перевода
+for i in ar:
+    print(i, '->' ,roman_to_int(i)) #из арабских переносим в римские 
 
-
-number = [int(x) for x in input('Введите арабское чилсло что преобразовать в римское: ').split()]
-# a=[4, 58, 1994, 26, 99, 69, 80]
-for i in number:
-    print(i, '->',int_to_roman(i))
+ob=[4, 58, 1994, 26, 99, 69, 80]
+for i in ob:
+    print(i, '->',int_to_roman(i)) #из римских в арабские
